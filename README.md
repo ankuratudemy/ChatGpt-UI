@@ -12,6 +12,7 @@ Python/JS experimental scripts
 - Node JS
 - Python
 - OpenAI key
+- postgresdb
 
 ## Setup
 
@@ -42,8 +43,12 @@ npm install
 cd client
 npm start
 ```
+2. Local potsgresdb
 
-2. Start the server
+```
+Install postgresdb locally. to store chat history
+```
+3. Start the server
 
 ```
 cd python-server
