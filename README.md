@@ -1,57 +1,47 @@
-# Talkbot App
+# ChatGpt UI App
 
-A conversational AI app inspired by OpenAI's GPT-3 language model, built with Create React App.
+App with React Material UI client with Okta integration. 
+Python/JS experimental scripts
 
 ## Features
 
-- Natural language processing and understanding
-- Context-aware responses
-- Ability to converse on a variety of topics
-- React-based front-end for easy user interaction
-- Node.js back-end for communication with the OpenAI API
+- Added chat history with local postgresdb
 
 ## Requirements
 
 - Node JS
-- npm
-- [Create Open AI account](https://beta.openai.com/signup/)
+- Python
+- OpenAI key
 
 ## Setup
 
 1. Clone the repository
 
+2. Update .env file for client with following okta creds:
+
 ```
-git clone https://github.com/ankuratudemy/ReactChatGptUI.git
+REACT_APP_CLIENT_ID=
+REACT_APP_ISSUER="https://<domain>/oauth2/default"
+REACT_APP_OKTA_TESTING_DISABLEHTTPSCHECK="false"
 ```
 
-2. Install client dependencies
+3. Install client dependencies
 
 ```
 cd client
 npm install
 ```
 
-3. Install server dependencies
+
+4. Install server dependencies
 
 ```
+update .env with OPENAI_API_KEY value
+
 cd server
 npm install
 ```
 
-4. Get your Open AI API key from [Open AI API Key](https://platform.openai.com/account/api-keys)
-
-5. Environment Variable Setup
-
-- Go to server folder and create .env file in root of server folder and create a variable REACT_APP_OPENAI_API_KEY = [ Your Open AI key here ] insise .env file as
-
-```
-REACT_APP_OPENAI_API_KEY = [Your Open AI key here]
-
-```
-6. Configure Firebase 
-- Go to [firbase console](https://console.firebase.google.com/) & click on add project, follow the guidelines to create new firebase project
-- Once project is created you'll see the config file generated for you. If you do not find the config file, see the Project Overview section on the left panel. Just click the gear icon     which is at the right of Project Overview, there you'll see the Project Setting. 
-- Click on the Project Setting, scroll to the bottom there you'll see "Your apps" section. You need to select web with <mark> </> </mark> symbols. Click on the icon and follow along to add firebase to your web app. Once you'll have your config file update your firebase.config file in the client/src folder. 
 
 ## Usage
 
@@ -73,4 +63,4 @@ node index.js
 
 - Check if your server application run on port 4000
 
-# ChatGpt-UI
+
